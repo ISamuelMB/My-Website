@@ -1,123 +1,140 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="description" content="Samuel Mendez - Young Developer passionate about Extended Reality and AI">
     <meta name="theme-color" content="#6C63FF">
     <title>Samuel Mendez - Young Developer</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="./dist/output.css" rel="stylesheet">
 </head>
-<body>
-    <div class="cursor-glow"></div>
-    
-    <header>
-        <nav>
-            <div class="logo">SM</div>
-            <div class="nav-links">
-                <a href="#home">Home</a>
-                <a href="#about">About</a>
-                <a href="#projects">Projects</a>
-                <a href="#game">Game</a>
-                <a href="#contact">Contact</a>
+<body class="font-poppins bg-gray-50 overflow-x-hidden">
+    <header class="fixed w-full top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm">
+        <nav class="container-center flex justify-between items-center h-16">
+            <div class="text-2xl font-bold text-primary">SM</div>
+            <div class="hidden md:flex space-x-8">
+                <a href="#home" class="text-gray-700 hover:text-primary transition-colors">Home</a>
+                <a href="#about" class="text-gray-700 hover:text-primary transition-colors">About</a>
+                <a href="#projects" class="text-gray-700 hover:text-primary transition-colors">Projects</a>
+                <a href="#game" class="text-gray-700 hover:text-primary transition-colors">Game</a>
+                <a href="#contact" class="text-gray-700 hover:text-primary transition-colors">Contact</a>
             </div>
         </nav>
     </header>
 
-    <main>
-        <section id="home" class="hero">
-            <div class="hero-content">
-                <h1 class="glitch-text">Samuel Mendez</h1>
-                <p class="typing-text">Young Developer passionate about Extended Reality and AI</p>
-                <div class="age-location">
-                    <span><i class="fas fa-map-marker-alt"></i> Mexico</span>
-                    <span><i class="fas fa-graduation-cap"></i> Student Developer</span>
+    <main class="pt-16">
+        <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-gray-50 to-gray-100">
+            <div class="container-center text-center">
+                <h1 class="text-4xl md:text-6xl font-bold text-primary mb-4 animate-float">Samuel Mendez</h1>
+                <p class="text-xl md:text-2xl text-gray-600 mb-8">Young Developer passionate about Extended Reality and AI</p>
+                <div class="flex flex-col md:flex-row justify-center items-center gap-4 text-gray-600">
+                    <span class="flex items-center gap-2">
+                        <i class="fas fa-map-marker-alt text-primary"></i> Mexico
+                    </span>
+                    <span class="flex items-center gap-2">
+                        <i class="fas fa-graduation-cap text-primary"></i> Student Developer
+                    </span>
                 </div>
-            </div>
-            <div class="hero-background">
-                <div class="particles"></div>
             </div>
         </section>
 
-        <section id="about" class="about">
-            <h2>About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>Hi! I'm Samuel, a 12-year-old developer from Mexico with a strong interest in Extended Reality and Artificial Intelligence. I believe in using technology to create amazing experiences and solve real-world problems.</p>
-                    <div class="skills">
-                        <div class="skill-tag">Extended Reality</div>
-                        <div class="skill-tag">Artificial Intelligence</div>
-                        <div class="skill-tag">Web Development</div>
-                        <div class="skill-tag">Creative Coding</div>
+        <section id="about" class="section-padding bg-white">
+            <div class="container-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">About Me</h2>
+                <div class="max-w-3xl mx-auto">
+                    <p class="text-gray-600 mb-8 text-lg">
+                        Hi! I'm Samuel, a 12-year-old developer from Mexico with a strong interest in Extended Reality and 
+                        Artificial Intelligence. I believe in using technology to create amazing experiences and solve real-world problems.
+                    </p>
+                    <div class="flex flex-wrap gap-3">
+                        <span class="bg-primary/10 text-primary px-4 py-2 rounded-full">Extended Reality</span>
+                        <span class="bg-primary/10 text-primary px-4 py-2 rounded-full">Artificial Intelligence</span>
+                        <span class="bg-primary/10 text-primary px-4 py-2 rounded-full">Web Development</span>
+                        <span class="bg-primary/10 text-primary px-4 py-2 rounded-full">Creative Coding</span>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="projects" class="projects">
-            <h2>My Projects</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <div class="project-image placeholder-1"></div>
-                    <h3>VR Learning Experience</h3>
-                    <p>An educational VR environment for learning science concepts</p>
-                    <div class="project-tags">
-                        <span>VR</span>
-                        <span>Education</span>
+        <section id="projects" class="section-padding bg-gray-50">
+            <div class="container-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">My Projects</h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:-translate-y-2">
+                        <div class="h-48 bg-gradient-to-r from-primary to-accent"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">VR Learning Experience</h3>
+                            <p class="text-gray-600 mb-4">An educational VR environment for learning science concepts</p>
+                            <div class="flex gap-2">
+                                <span class="text-sm bg-gray-100 px-3 py-1 rounded-full">VR</span>
+                                <span class="text-sm bg-gray-100 px-3 py-1 rounded-full">Education</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image placeholder-2"></div>
-                    <h3>AI Chat Assistant</h3>
-                    <p>A friendly AI chatbot to help with homework</p>
-                    <div class="project-tags">
-                        <span>AI</span>
-                        <span>Python</span>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:-translate-y-2">
+                        <div class="h-48 bg-gradient-to-r from-accent to-primary"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">AI Chat Assistant</h3>
+                            <p class="text-gray-600 mb-4">A friendly AI chatbot to help with homework</p>
+                            <div class="flex gap-2">
+                                <span class="text-sm bg-gray-100 px-3 py-1 rounded-full">AI</span>
+                                <span class="text-sm bg-gray-100 px-3 py-1 rounded-full">Python</span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="project-card">
-                    <div class="project-image placeholder-3"></div>
-                    <h3>AR Game</h3>
-                    <p>An augmented reality game that makes learning fun</p>
-                    <div class="project-tags">
-                        <span>AR</span>
-                        <span>Gaming</span>
+                    <div class="bg-white rounded-xl shadow-lg overflow-hidden transition-transform hover:-translate-y-2">
+                        <div class="h-48 bg-gradient-to-r from-primary via-accent to-primary"></div>
+                        <div class="p-6">
+                            <h3 class="text-xl font-semibold mb-2">AR Game</h3>
+                            <p class="text-gray-600 mb-4">An augmented reality game that makes learning fun</p>
+                            <div class="flex gap-2">
+                                <span class="text-sm bg-gray-100 px-3 py-1 rounded-full">AR</span>
+                                <span class="text-sm bg-gray-100 px-3 py-1 rounded-full">Gaming</span>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="game" class="game-section">
-            <h2>Space Shooter Game</h2>
-            <div class="game-container">
-                <canvas id="gameCanvas"></canvas>
-                <div class="game-controls">
-                    <button id="startGame">Start Game</button>
-                    <div class="score">Score: <span id="scoreValue">0</span></div>
+        <section id="game" class="section-padding bg-secondary">
+            <div class="container-center">
+                <h2 class="text-3xl md:text-4xl font-bold text-center mb-12 text-white">Space Shooter Game</h2>
+                <div class="max-w-4xl mx-auto bg-gray-900 rounded-xl p-4 overflow-hidden">
+                    <canvas id="gameCanvas" class="w-full rounded-lg"></canvas>
+                    <div class="flex justify-between items-center mt-4 gap-4">
+                        <button id="startGame" class="btn-primary">Start Game</button>
+                        <div class="text-accent text-xl font-semibold">Score: <span id="scoreValue">0</span></div>
+                    </div>
                 </div>
             </div>
         </section>
 
-        <section id="contact" class="contact">
-            <h2>Get In Touch</h2>
-            <div class="contact-content">
-                <p>I'm always excited to collaborate on interesting projects!</p>
-                <div class="social-links">
-                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
-                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
-                    <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+        <section id="contact" class="section-padding bg-white">
+            <div class="container-center text-center">
+                <h2 class="text-3xl md:text-4xl font-bold mb-12">Get In Touch</h2>
+                <p class="text-gray-600 mb-8 text-lg">I'm always excited to collaborate on interesting projects!</p>
+                <div class="flex justify-center gap-8">
+                    <a href="#" class="text-2xl text-gray-600 hover:text-primary transition-colors">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="text-2xl text-gray-600 hover:text-primary transition-colors">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="#" class="text-2xl text-gray-600 hover:text-primary transition-colors">
+                        <i class="fas fa-envelope"></i>
+                    </a>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer>
-        <p>&copy; 2025 Samuel Mendez. All rights reserved.</p>
+    <footer class="bg-secondary py-8">
+        <p class="text-center text-gray-400">&copy; 2025 Samuel Mendez. All rights reserved.</p>
     </footer>
 
-    <script src="script.js"></script>
     <script src="game.js"></script>
 </body>
 </html>

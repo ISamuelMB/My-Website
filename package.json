@@ -1,0 +1,17 @@
+{
+  "name": "samuel-portfolio",
+  "version": "1.0.0",
+  "description": "Welcome to my portfolio! I'm Samuel Mendez, a young developer passionate about Extended Reality and AI.",
+  "main": "game.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.4.49",
+    "tailwindcss": "^3.4.17"
+  }
+}

@@ -6,17 +6,17 @@ class SpaceShooter {
         this.gameOver = false;
         this.gameLoop = null;
 
-        // Set canvas size
-        this.canvas.width = 800;
-        this.canvas.height = 600;
+        // Set canvas size based on container
+        this.resizeCanvas();
+        window.addEventListener('resize', () => this.resizeCanvas());
 
         // Player properties
         this.player = {
             x: this.canvas.width / 2,
             y: this.canvas.height - 50,
-            width: 50,
-            height: 50,
-            speed: 5
+            width: this.canvas.width * 0.06, // Relative size
+            height: this.canvas.width * 0.06,
+            speed: this.canvas.width * 0.006
         };
 
         // Game state
@@ -215,6 +215,18 @@ class SpaceShooter {
                rect1.x + rect1.width > rect2.x &&
                rect1.y < rect2.y + rect2.height &&
                rect1.y + rect1.height > rect2.y;
+    }
+
+    resizeCanvas() {
+        const container = this.canvas.parentNode;
+        const aspectRatio = 800 / 600;
+        const width = container.offsetWidth;
+        const height = width / aspectRatio;
+
+        this.canvas.width = width;
+        this.canvas.height = height;
+        this.player.x = this.canvas.width / 2;
+        this.player.y = this.canvas.height - 50;
     }
 }
 

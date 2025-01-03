@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Mendez - Young Developer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cursor-glow"></div>
+    
+    <header>
+        <nav>
+            <div class="logo">SM</div>
+            <div class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#projects">Projects</a>
+                <a href="#game">Game</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <h1 class="glitch-text">Samuel Mendez</h1>
+                <p class="typing-text">Young Developer passionate about Extended Reality and AI</p>
+                <div class="age-location">
+                    <span><i class="fas fa-map-marker-alt"></i> Mexico</span>
+                    <span><i class="fas fa-graduation-cap"></i> Student Developer</span>
+                </div>
+            </div>
+            <div class="hero-background">
+                <div class="particles"></div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Hi! I'm Samuel, a 12-year-old developer from Mexico with a strong interest in Extended Reality and Artificial Intelligence. I believe in using technology to create amazing experiences and solve real-world problems.</p>
+                    <div class="skills">
+                        <div class="skill-tag">Extended Reality</div>
+                        <div class="skill-tag">Artificial Intelligence</div>
+                        <div class="skill-tag">Web Development</div>
+                        <div class="skill-tag">Creative Coding</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects">
+            <h2>My Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <div class="project-image placeholder-1"></div>
+                    <h3>VR Learning Experience</h3>
+                    <p>An educational VR environment for learning science concepts</p>
+                    <div class="project-tags">
+                        <span>VR</span>
+                        <span>Education</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image placeholder-2"></div>
+                    <h3>AI Chat Assistant</h3>
+                    <p>A friendly AI chatbot to help with homework</p>
+                    <div class="project-tags">
+                        <span>AI</span>
+                        <span>Python</span>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <div class="project-image placeholder-3"></div>
+                    <h3>AR Game</h3>
+                    <p>An augmented reality game that makes learning fun</p>
+                    <div class="project-tags">
+                        <span>AR</span>
+                        <span>Gaming</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="game" class="game-section">
+            <h2>Space Shooter Game</h2>
+            <div class="game-container">
+                <canvas id="gameCanvas"></canvas>
+                <div class="game-controls">
+                    <button id="startGame">Start Game</button>
+                    <div class="score">Score: <span id="scoreValue">0</span></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm always excited to collaborate on interesting projects!</p>
+                <div class="social-links">
+                    <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Samuel Mendez. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
